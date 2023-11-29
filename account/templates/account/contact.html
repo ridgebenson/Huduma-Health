@@ -1,0 +1,41 @@
+{% extends "base.html" %}
+
+{% load bootstrap3 %}
+{% load static %}
+{% block content %}
+
+   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css">
+    <link rel="stylesheet" href="{% static 'css/more.css' %}">
+
+<body>
+    <main class="contact-page">
+        <div style="width: 80%; margin: 0 auto; text-align: center;">
+            <h2 style="font-size: 24px; font-weight: bold;color: #0062cc;">Contact Us</h2>
+            <div class="contact-info">
+                <div class="contact-item" style="display: flex; align-items: center;">
+                    <a href="tel:+254 798-264-166"><i class="fas fa-phone-alt" style="font-size: 20px; margin-right: 10px;color: #0062cc;"></i></a>
+                    <span style="font-size: 16px;"><a href="tel:+254 798-264-166">+254 798 264 166</a></span>
+                </div>
+                <div class="contact-item" style="display: flex; align-items: center;">
+                    <a href="mailto:ridgemuturi@gmail.com"><i class="fas fa-envelope" style="font-size: 20px; margin-right: 10px;color: #0062cc;"></i></a>
+                    <span style="font-size: 16px;"><a href="mailto:ridgemuturi@gmail.com">ridgemuturi@gmail.com</a></span>
+                </div>
+                <div class="contact-item" style="display: flex; align-items: center;">
+                    <a href="https://wa.me/254798264166"><i class="fab fa-whatsapp" style="font-size: 20px; margin-right: 10px;color: #0062cc;"></i></a>
+                    <span style="font-size: 16px;"><a href="https://wa.me/254798264166">+254 798 264 166</a></span>
+                </div>
+                <div class="contact-item" style="display: flex; align-items: center;">
+                    <a href="https://goo.gl/maps/NmjpUStT42DrfpnC6"><i class="fas fa-globe" style="font-size: 20px; margin-right: 10px;color: #0062cc;"></i></a>
+                    <span style="font-size: 16px;"><a href="https://goo.gl/maps/NmjpUStT42DrfpnC6">Nyeri Town, Nyeri</a></span>
+                </div>
+                <div class="contact-item" style="display: flex; align-items: center;">
+                    <a href="https://wa.me/254798264166"><i class="fab fa-linkedin" style="font-size: 20px; margin-right: 10px;color: #0062cc;"></i></a>
+                    <span style="font-size: 16px;"><a href="https://wa.me/254798264166">Huduma Health</a></span>
+                </div>
+            </div>
+        </div>
+    </main>
+
+</body>
+
+{% endblock %}
