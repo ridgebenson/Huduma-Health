@@ -4,30 +4,84 @@
         <link rel="stylesheet" href="{% static 'css/more.css' %}">
 
     <body style="font-family: sans-serif;">
-    <main style="padding: 20px 0;">
-         <img src="{% static 'img/abt.png' %}" style="height:auto;width: 500px;" alt="Huduma Health Logo">
-        <div style="width: 80%; margin: 0 auto;">
-            <h2 style="font-size: 24px; font-weight: bold;">About Huduma Health</h2>
-            <p style="font-size: 16px;">Huduma Health is a web application that aims to make healthcare more accessible and affordable for all Kenyans. We provide a platform for patients to register, manage their medical records, and view their bills online. We also provide a platform for doctors to register, manage their patients, and access their medical records.</p>
+    <style>
+        body {
+            font-family: 'Arial', sans-serif;
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
 
-            <h3>Features</h3>
-            <ul style="list-style-type: none; padding: 0; margin: 0;">
-                <li style="margin-bottom: 10px;">Patient registration and login</li>
-                <li style="margin-bottom: 10px;">Doctor registration and login</li>
-                <li style="margin-bottom: 10px;">Patient medical record upload</li>
-                <li style="margin-bottom: 10px;">Patient bill viewing</li>
-                <li style="margin-bottom: 10px;">Doctor patient management</li>
-                <li style="margin-bottom: 10px;">Doctor medical record access</li>
-            </ul>
+        main {
+            padding: 20px 0;
+            text-align: center;
+        }
 
-            <h3>Benefits</h3>
-            <ul style="list-style-type: none; padding: 0; margin: 0;">
-                <li style="margin-bottom: 10px;">Improved access to healthcare</li>
-                <li style="margin-bottom: 10px;">Reduced healthcare costs</li>
-                <li style="margin-bottom: 10px;">Improved patient satisfaction</li>
-                <li style="margin-bottom: 10px;">Improved doctor efficiency</li>
-            </ul>
-        </div>
-    </main>
+        img {
+            max-width: 100%;
+            height: auto;
+        }
+
+        .container {
+            width: 80%;
+            margin: 0 auto;
+        }
+
+        h2 {
+            font-size: 2em;
+            font-weight: bold;
+            color:royalblue;
+        }
+
+        p {
+            font-size: 1.125em;
+            color: #0056b3;
+            line-height: 1.6;
+        }
+
+        h3 {
+            font-size: 1.5em;
+            font-weight: bold;
+            color: royalblue;
+            margin-top: 20px;
+        }
+
+        ul {
+            list-style-type: none;
+            padding: 0;
+            margin: 0;
+        }
+
+        li {
+            margin-bottom: 10px;
+            font-size: 1.125em;
+            color: #3059d5;
+        }
+    </style>
+        <main style="padding: 20px 0;">
+             <img src="{% static 'img/abt.png' %}" alt="Huduma Health Logo">
+            <div class="container">
+                <h2>About Huduma Health</h2>
+                <p>Huduma Health is a web application that aims to make healthcare more accessible and affordable for all Kenyans. We provide a platform for patients to register, manage their medical records, and view their bills online. We also provide a platform for doctors to register, manage their patients, and access their medical records.</p>
+
+                <h3>Features</h3>
+                <ul>
+                    <li>Patient registration and login</li>
+                    <li>Doctor registration and login</li>
+                    <li>Patient medical record upload</li>
+                    <li>Patient bill viewing</li>
+                    <li>Doctor patient management</li>
+                    <li>Doctor medical record access</li>
+                </ul>
+
+                <h3>Benefits</h3>
+                <ul>
+                    <li>Improved access to healthcare</li>
+                    <li>Reduced healthcare costs</li>
+                    <li>Improved patient satisfaction</li>
+                    <li>Improved doctor efficiency</li>
+                </ul>
+            </div>
+        </main>
     </body>
 {% endblock %}

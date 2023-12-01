@@ -3,43 +3,47 @@
 
 
 {% block content %}
-<div class="container">
-    <h2>Your Appointments</h2>
-    <div>
-        {% if user.is_patient %}
-        <table class="table table-striped">
-            <thead>
-                <th>Date</th>
-                <th>Time</th>
-                <th>Consulting Doctor</th>
-                <th>Status</th>
-            </thead>
-            {% for obj in object_list %}
-            <tr>
-                <td>{{ obj.date }}</td>
-                <td>{{ obj.time }}</td>
-                <td>{{ obj.doctor }}</td>
-                <td>{{ obj.status }}</td>
-            </tr>
-            {% endfor %}
-        </table>
-        {% endif %}
-        {% if user.is_doctor %}
-        <table class="table table-striped">
-            <thead>
-                <th>Date</th>
-                <th>Time</th>
-                <th>Patient Info</th>
-            </thead>
-            {% for obj in object_list %}
-            <tr>
-                <td>{{ obj.date }}</td>
-                <td>{{ obj.time }}</td>
-                <td>{{ obj.patient }}</td>
-            </tr>
-            {% endfor %}
-        </table>
-        {% endif %}
-    </div>  
-</div>
+
+    <body style="background-image: url('/static/img/bg00.png');background-size: cover;">
+
+        <div class="container">
+            <h2>Your Appointments</h2>
+            <div>
+                {% if user.is_patient %}
+                <table class="table table-striped">
+                    <thead>
+                        <th>Date</th>
+                        <th>Time</th>
+                        <th>Consulting Doctor</th>
+                        <th>Status</th>
+                    </thead>
+                    {% for obj in object_list %}
+                    <tr>
+                        <td>{{ obj.date }}</td>
+                        <td>{{ obj.time }}</td>
+                        <td>{{ obj.doctor }}</td>
+                        <td>{{ obj.status }}</td>
+                    </tr>
+                    {% endfor %}
+                </table>
+                {% endif %}
+                {% if user.is_doctor %}
+                <table class="table table-striped">
+                    <thead>
+                        <th>Date</th>
+                        <th>Time</th>
+                        <th>Patient Info</th>
+                    </thead>
+                    {% for obj in object_list %}
+                    <tr>
+                        <td>{{ obj.date }}</td>
+                        <td>{{ obj.time }}</td>
+                        <td>{{ obj.patient }}</td>
+                    </tr>
+                    {% endfor %}
+                </table>
+                {% endif %}
+            </div>
+        </div>
+    </body>
 {% endblock %}

@@ -23,13 +23,12 @@
 
   <body>
 
-    <nav class="navbar navbar-inverse" role="navigation" id="navbar">
+    <nav class="navbar navbar-inverse" role="navigation" id="navbar" >
         <div class="container">
             <a class="navbar-brand mynav" href="{% url 'account:home' %}">Huduma Health</a>
-
-    					<ul class="nav navbar-nav navbar-right mynav">
-    						{% if user.is_authenticated %}
-                      {% if user.is_doctor %}
+                <ul class="nav navbar-nav navbar-right mynav">
+                    {% if user.is_authenticated %}
+                        {% if user.is_doctor %}
                       <!-- doctor's dashboard -->
                       <li><a href="{% url 'account:home' %}"class="btn btn-simple">Home</a></li>
                       <li><a href="{% url 'account:about-us' %}"class="btn btn-simple">About Us</a></li>
@@ -72,9 +71,9 @@
                       <li><a href="{% url 'account:about-us' %}"class="btn btn-simple">About Us</a></li>
                       <li><a href="{% url 'account:contact' %}"class="btn btn-simple">Contact</a></li>
                       <li><a href="{% url 'account:signup' %}" class="btn btn-simple">Register</a></li>
-    						      <li><a href="{% url 'account:login' %}" class="btn btn-simple"><button class="btn btn-success">Log In</button></a></li>   
-    						{% endif %}
-    					</ul>
+                        <li><a href="{% url 'account:login' %}" class="btn btn-simple"><button class="btn btn-success">Log In</button></a></li>
+                    {% endif %}
+                </ul>
     			</div>
     		</nav>
         <div class="container mycontent">
@@ -84,5 +83,4 @@
         </div>
     <canvas id="canvas"></canvas>
   </body>
-  
 </html>
