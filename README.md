@@ -1,0 +1,2 @@
+# Huduma-Health
+Huduma Health is a web based system where users can register as patients or doctors. A registered patient can view their requested appointments, view invoices alongside payments, manage their profile and view their medical history. A doctor on the other hand can manage their profile, view scheduled appointments and prescriptions. A superuser can perform CRUD operations on users, appointments, payments, and prescriptions, and user profiles.
