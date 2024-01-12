@@ -21,6 +21,5 @@ Huduma Health is a web based application in Django designed to streamline some s
     - Appointments
     - Patient Invoices
     - Payments
-    - Prescrriptions
-
+    - Prescriptions
 
