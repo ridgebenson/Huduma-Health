@@ -22,7 +22,7 @@ Huduma Health is a web based application in Django designed to streamline some s
     - Patient Invoices
     - Payments
     - Prescriptions
-<<<<<<< HEAD
+
 ## Contributing to the project
 To set up, install and run this project:
 1. Clone the repository
@@ -53,6 +53,3 @@ python manage.py createsuperuser
 ```bash
 python manage.py runserver
 ```
-=======
-
->>>>>>> 9baf977b9810d72b8cde517a2ac3ff7d66168215
